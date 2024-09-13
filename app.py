@@ -49,7 +49,7 @@ st.sidebar.header("Navigation")
 page = st.sidebar.radio("Navigate", ["Home", "Translate", "Settings"], key="navigation")
 
 if page == "Home":
-    st.header("Welcome to the Enhanced Speech Translator App")
+    st.header("Enhanced Speech Translator App")
     st.write("Capture speech, transcribe, translate, and hear the translation.")
 
 elif page == "Translate":
