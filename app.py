@@ -39,7 +39,7 @@ def speak_text(text, lang_code=None):
         st.error(f"An error occurred while speaking text: {e}")
 
 # Streamlit app
-st.title("Enhanced Speech Translator - v1.0")
+st.title("Enhanced Speech Translator - v2.0")
 
 # Default settings
 if 'settings' not in st.session_state:
