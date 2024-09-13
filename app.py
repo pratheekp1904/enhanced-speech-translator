@@ -1,5 +1,5 @@
 import streamlit as st
-import speechrecognition as sr
+import speech_recognition as sr
 from googletrans import Translator, LANGUAGES
 import pyttsx3
 
@@ -39,7 +39,7 @@ def speak_text(text, lang_code=None):
         st.error(f"An error occurred while speaking text: {e}")
 
 # Streamlit app
-st.title("Enhanced Speech Translator - v1.0")
+st.title("Enhanced Speech Translator")
 
 # Default settings
 if 'settings' not in st.session_state:
@@ -49,7 +49,7 @@ st.sidebar.header("Navigation")
 page = st.sidebar.radio("Navigate", ["Home", "Translate", "Settings"], key="navigation")
 
 if page == "Home":
-    st.header("Enhanced Speech Translator App")
+    st.header("Welcome to the Enhanced Speech Translator App")
     st.write("Capture speech, transcribe, translate, and hear the translation.")
 
 elif page == "Translate":
