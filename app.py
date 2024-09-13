@@ -1,5 +1,5 @@
 import streamlit as st
-import speech_recognition as sr
+import speechrecognition as sr
 from googletrans import Translator, LANGUAGES
 import pyttsx3
 
